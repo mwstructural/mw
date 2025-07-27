@@ -1,72 +1,160 @@
-/* Base styles */
-body {
-  font-family: Arial, sans-serif;
+/* Reset some default browser styles */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-  color: #001F3F;
-  line-height: 1.6;
 }
 
-/* Header styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #001f3f;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Container to center content */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
 header {
   background-color: #001f3f;
-  color: white;
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 .header-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .logo {
-  width: 110px !important;
-  height: auto !important;
+  width: 120px;
+  height: auto;
 }
-
 
 /* Navigation */
-header nav a {
+nav a {
   color: white;
-  margin-left: 20px;
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.2s;
+  margin-left: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
-header nav a:hover {
-  color: #ffcc00; /* Optional hover effect */
+nav a:first-child {
+  margin-left: 0;
 }
 
-/* Main content */
+nav a:hover,
+nav a:focus {
+  color: #ffcc00; /* Highlight color on hover/focus */
+  outline: none;
+}
+
+/* Main Content */
 main {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 0 20px;
+  padding: 40px 0;
 }
 
 /* Headings */
-h1, h2 {
-  margin-top: 0;
+h1, h2, h3 {
+  color: #001f3f;
+  margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 h1 {
-  font-size: 2em;
-  color: #001F3F;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 h2 {
-  font-size: 1.5em;
-  color: #004080;
-  margin-top: 30px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 40px;
 }
 
-/* Section/card styling */
+/* Section cards */
 section {
-  background: white;
-  pa
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+/* Lists */
+ul {
+  list-style: inside disc;
+  margin-left: 20px;
+  color: #004080;
+}
+
+/* Links inside content */
+a {
+  color: #001f3f;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #004080;
+  outline: none;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  background-color: #001f3f;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #004080;
+  outline: none;
+}
+
+/* Footer */
+footer {
+  background-color: #001f3f;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Nav (simple stack on mobile) */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 15px;
+  }
+
+  nav a {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
