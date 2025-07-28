@@ -41,6 +41,12 @@ header {
 }
 
 /* Navigation */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 nav a {
   color: white;
   text-decoration: none;
