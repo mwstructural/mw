@@ -4,25 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About Us - MW Consulting Engineers</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0 20px;
+      padding: 0;
       line-height: 1.6;
       color: #222;
       background-color: #f9f9f9;
     }
-    header {
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 10px 20px;
       background-color: #001f3f;
+    }
+
+    .logo {
+      width: 110px;
+      height: auto;
+    }
+
+    nav a {
       color: white;
-      padding: 40px 20px;
-      text-align: center;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
     }
-    h1 {
-      margin: 0;
-    }
-    section {
+
+    main {
       max-width: 900px;
       margin: 40px auto;
       background: white;
@@ -30,6 +45,11 @@
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
+
+    h1 {
+      color: #004080;
+    }
+
     h2 {
       color: #004080;
       margin-top: 30px;
@@ -37,20 +57,22 @@
   </style>
 </head>
 <body>
-<header>
-  <img src="images/MWlogo.png" alt="MW Consulting Engineers Logo" class="logo" width="110">
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
 
+  <!-- Unified Header (Same as Home Page) -->
+  <header class="header-container">
+    <img src="images/MWlogo.png" alt="MW Consulting Engineers Logo" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
   <main>
     <h1>About MW Consulting Engineers</h1>
-  <section>
     <p>
       MW Consulting Engineers is a Brisbane-based consultancy offering practical, buildable, and cost-effective structural solutions. We work across a wide range of projects including residential buildings, industrial structures, and commercial developments.
     </p>
@@ -75,7 +97,7 @@
     <p>
       MW Consulting Engineers is committed to delivering timely and accurate engineering outcomes. All work complies with current Australian Standards and local council requirements. We aim to build long-term relationships based on trust, reliability, and technical excellence.
     </p>
-  </section>
+  </main>
 
 </body>
 </html>
