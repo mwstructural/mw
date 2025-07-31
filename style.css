@@ -7,75 +7,96 @@
 
 /* Body styles */
 body {
-  font-family: Arial, sans-serif; /* Change font here */
-  background-color: #f9f9f9; /* Page background color */
-  color: #001f3f; /* Main text color */
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #001f3f;
   line-height: 1.6;
-  padding: 20px; /* Space around page content */
+  padding: 20px;
 }
 
 /* Header styles */
 header {
-  background-color: #001f3f; /* Header background color */
-  color: white; /* Text color in header */
-  padding: 40px 20px; /* Space inside header */
-  max-width: 1100px; /* Header max width */
-  margin: 0 auto 40px auto; /* Center header horizontally and add bottom space */
-  display: flex; /* Flexbox for logo + nav */
-  align-items: center; /* Vertically center content */
-  justify-content: space-between; /* Space between logo and nav */
+  background-color: #001f3f;
+  color: white;
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Logo image */
+/* Logo size */
 .logo {
-  width: 110px; /* Logo width - change size here */
+  width: 110px;
   height: auto;
 }
 
-/* Navigation links container */
+/* Navigation links */
 nav a {
-  color: white; /* Nav link color */
-  text-decoration: none; /* Remove underline */
-  margin-left: 25px; /* Space between links */
-  font-weight: 600; /* Font weight for nav links */
-  font-size: 1.1rem; /* Font size for nav links - adjust here */
-  transition: color 0.3s ease; /* Smooth hover transition */
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
 }
 
-/* Remove left margin on first nav link */
 nav a:first-child {
   margin-left: 0;
 }
 
-/* Nav link hover/focus color */
 nav a:hover,
 nav a:focus {
-  color: #ffcc00; /* Highlight color */
+  color: #ffcc00;
   outline: none;
 }
 
 /* Main content container */
 main {
-  max-width: 900px; /* Content width */
-  margin: 0 auto; /* Center horizontally */
-  background: white; /* Content background */
-  padding: 30px; /* Inner spacing */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 /* Headings */
 h1 {
-  margin-bottom: 20px; /* Space below h1 */
+  margin-bottom: 20px;
 }
 
 h2 {
-  margin-top: 30px; /* Space above h2 */
-  margin-bottom: 15px; /* Space below h2 */
-  color: #004080; /* H2 color */
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #004080;
 }
 
-/* Form labels */
+/* Project styling */
+.project {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.project img {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+  margin-right: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.project-details h3 {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 6px;
+  color: #002050;
+}
+
+/* Form styles for contact page */
 form label {
   display: block;
   margin-top: 15px;
@@ -83,22 +104,20 @@ form label {
   color: #001f3f;
 }
 
-/* Form inputs, selects, textarea */
 form input, form select, form textarea {
-  width: 100%; /* Full width */
-  padding: 10px; /* Inner spacing */
+  width: 100%;
+  padding: 10px;
   margin-top: 5px;
-  border: 1px solid #ccc; /* Border style */
-  border-radius: 5px; /* Rounded edges */
+  border: 1px solid #ccc;
+  border-radius: 5px;
   font-family: inherit;
   font-size: 1rem;
 }
 
-/* Buttons */
 button.button {
   margin-top: 20px;
-  background-color: #001f3f; /* Button background */
-  color: white; /* Button text */
+  background-color: #001f3f;
+  color: white;
   border: none;
   padding: 12px 25px;
   border-radius: 5px;
@@ -109,6 +128,6 @@ button.button {
 
 button.button:hover,
 button.button:focus {
-  background-color: #004080; /* Hover button background */
+  background-color: #004080;
   outline: none;
 }
