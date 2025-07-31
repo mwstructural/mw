@@ -21,9 +21,11 @@ header {
 
 /* Logo styling */
 .logo {
-  width: 80px;                            /* Adjust size of logo */
-  height: auto;                           /* Maintain aspect ratio */
+  max-width: 120px;     /* Limits the logo width */
+  height: auto;         /* Maintains aspect ratio */
+  display: block;       /* Prevents inline spacing issues */
 }
+
 
 /* Navigation container */
 nav {
