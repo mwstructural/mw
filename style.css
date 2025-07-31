@@ -1,11 +1,11 @@
-/* Reset some default browser styles */
+/* Reset default browser styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Body and base styles */
+/* Body and base typography */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f9f9f9;
@@ -14,17 +14,17 @@ body {
   font-size: 16px;
 }
 
-/* Container to center content and set max width */
+/* Container to center main content */
 .container {
   max-width: 1100px;
-  margin: 40px auto;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Header Styles */
-header.header-container {
+/* Header styles */
+.header-container {
   background-color: #001f3f;
-  padding: 15px 20px;
+  padding: 40px 20px;
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
@@ -32,12 +32,10 @@ header.header-container {
   justify-content: space-between;
 }
 
-/* Logo */
 .logo {
   width: 110px;
   height: auto;
   display: block;
-  margin: 0;
 }
 
 /* Navigation */
@@ -52,7 +50,7 @@ nav a {
   text-decoration: none;
   margin-left: 25px;
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   transition: color 0.3s ease;
 }
 
@@ -62,11 +60,11 @@ nav a:first-child {
 
 nav a:hover,
 nav a:focus {
-  color: #ffcc00; /* Highlight color on hover/focus */
+  color: #ffcc00;
   outline: none;
 }
 
-/* Headings */
+/* Main content headings */
 h1, h2, h3 {
   color: #001f3f;
   margin-bottom: 20px;
@@ -84,7 +82,7 @@ h2 {
   margin-top: 40px;
 }
 
-/* Section styling */
+/* Sections styling */
 section {
   background-color: white;
   padding: 30px;
@@ -93,12 +91,11 @@ section {
   margin-bottom: 40px;
 }
 
-/* Paragraphs */
+/* Paragraphs and lists */
 p {
-  line-height: 1.6;
+  margin-bottom: 15px;
 }
 
-/* Lists */
 ul {
   list-style: inside disc;
   margin-left: 20px;
@@ -138,37 +135,7 @@ a:focus {
   outline: none;
 }
 
-/* Footer */
-footer {
-  background-color: #001f3f;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 0.9rem;
-}
-
-/* Responsive Nav (stack on small screens) */
-@media (max-width: 768px) {
-  header.header-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav {
-    margin-top: 15px;
-    width: 100%;
-    justify-content: flex-start;
-  }
-
-  nav a {
-    display: block;
-    margin-left: 0;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-  }
-}
-
-/* Form styles (for contact/quotation forms) */
+/* Form styles */
 .quotation-form {
   background-color: white;
   padding: 30px;
@@ -176,22 +143,24 @@ footer {
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   margin-top: 30px;
   max-width: 600px;
-  font-family: inherit;
 }
 
-.quotation-form label {
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
   display: block;
-  margin-top: 15px;
+  margin-bottom: 8px;
   font-weight: 600;
   color: #001f3f;
 }
 
-.quotation-form input,
-.quotation-form select,
-.quotation-form textarea {
+.form-group input,
+.form-group select,
+.form-group textarea {
   width: 100%;
   padding: 10px;
-  margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-family: inherit;
@@ -199,20 +168,25 @@ footer {
   resize: vertical;
 }
 
-.quotation-form button {
-  margin-top: 20px;
-  background-color: #001f3f;
-  color: white;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 5px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+/* Responsive navigation */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
 
-.quotation-form button:hover,
-.quotation-form button:focus {
-  background-color: #004080;
-  outline: none;
+  nav {
+    margin-top: 15px;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
 }
