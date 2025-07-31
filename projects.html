@@ -4,29 +4,71 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects - MW Consulting Engineers</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
       color: #222;
+      background-color: #f9f9f9;
     }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 10px 20px;
+      background-color: #001f3f;
+    }
+
+    .logo {
+      width: 110px;
+      height: auto;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
     h1 {
       color: navy;
     }
+
     section {
       margin-bottom: 40px;
     }
+
     h2 {
       color: #004080;
       border-bottom: 2px solid #004080;
       padding-bottom: 5px;
       margin-bottom: 15px;
     }
+
     .project {
       margin-bottom: 20px;
       display: flex;
       align-items: flex-start;
     }
+
     .project img {
       width: 200px;
       height: 140px;
@@ -35,9 +77,11 @@
       border: 1px solid #ccc;
       border-radius: 4px;
     }
+
     .project-details {
       max-width: 600px;
     }
+
     .project-title {
       font-weight: bold;
       font-size: 1.1em;
@@ -47,58 +91,83 @@
   </style>
 </head>
 <body>
-  <h1>Our Projects</h1>
 
-  <section id="residential-projects">
-    <h2>Residential Projects</h2>
+  <!-- Header (Matches Home Page) -->
+  <header class="header-container">
+    <img src="images/MWlogo.png" alt="MW Consulting Engineers Logo" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <div class="project">
-      <img src="images/residential1.jpg" alt="Sunset Villas" />
-      <div class="project-details">
-        <div class="project-title">Sunset Villas</div>
-        <p>Structural design and consultation for a 12-unit townhouse development, focusing on sustainable foundations and retaining walls.</p>
+  <!-- Main Content -->
+  <main>
+    <h1>Our Projects</h1>
+
+    <section id="residential-projects">
+      <h2>Residential Projects</h2>
+
+      <div class="project">
+        <img src="images/residential1.jpg" alt="Sunset Villas" />
+        <div class="project-details">
+          <div class="project-title">Sunset Villas</div>
+          <p>Structural design and consultation for a 12-unit townhouse development, focusing on sustainable foundations and retaining walls.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="project">
-      <img src="images/residential2.jpg" alt="Greenfield Residence" />
-      <div class="project-details">
-        <div class="project-title">Greenfield Residence</div>
-        <p>Custom home structural engineering, including slab design and earthquake-resistant features for a two-storey family home.</p>
+      <div class="project">
+        <img src="images/residential2.jpg" alt="Greenfield Residence" />
+        <div class="project-details">
+          <div class="project-title">Greenfield Residence</div>
+          <p>Custom home structural engineering, including slab design and earthquake-resistant features for a two-storey family home.</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="industrial-projects">
-    <h2>Industrial Projects</h2>
+    <section id="industrial-projects">
+      <h2>Industrial Projects</h2>
 
-    <div class="project">
-      <img src="images/industrial1.jpg" alt="Westside Warehouse" />
-      <div class="project-details">
-        <div class="project-title">Westside Warehouse</div>
-        <p>Steel frame design and load-bearing slab assessment for a 5,000 sqm industrial warehouse facility.</p>
+      <div class="project">
+        <img src="images/industrial1.jpg" alt="Westside Warehouse" />
+        <div class="project-details">
+          <div class="project-title">Westside Warehouse</div>
+          <p>Steel frame design and load-bearing slab assessment for a 5,000 sqm industrial warehouse facility.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="project">
-      <img src="images/industrial2.jpg" alt="Central Manufacturing Plant" />
-      <div class="project-details">
-        <div class="project-title">Central Manufacturing Plant</div>
-        <p>Structural audits and design support for expansion works at a large manufacturing facility.</p>
+      <div class="project">
+        <img src="images/industrial2.jpg" alt="Central Manufacturing Plant" />
+        <div class="project-details">
+          <div class="project-title">Central Manufacturing Plant</div>
+          <p>Structural audits and design support for expansion works at a large manufacturing facility.</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="other-projects">
-    <h2>Other Projects</h2>
+    <section id="other-projects">
+      <h2>Other Projects</h2>
 
-    <div class="project">
-      <img src="images/commercial1.jpg" alt="Downtown Office Fit-out" />
-      <div class="project-details">
-        <div class="project-title">Downtown Office Fit-out</div>
-        <p>Structural assessment and reinforcement for a commercial office refurbishment in the city center.</p>
+      <div class="project">
+        <img src="images/commercial1.jpg" alt="Downtown Office Fit-out" />
+        <div class="project-details">
+          <div class="project-title">Downtown Office Fit-out</div>
+          <p>Structural assessment and reinforcement for a commercial office refurbishment in the city center.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="project">
-      <img src="images/infrastruc
+      <div class="project">
+        <img src="images/infrastructure1.jpg" alt="Bridge Support Evaluation" />
+        <div class="project-details">
+          <div class="project-title">Bridge Support Evaluation</div>
+          <p>Engineering consultation and reporting for structural upgrades to a regional road bridge infrastructure.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
