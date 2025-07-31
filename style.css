@@ -27,20 +27,22 @@ header {
 }
 
 .header-container {
+  background-color: #001f3f;
+  padding: 15px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 .logo {
-  width: 120px;
+  width: 110px;   /* Set this width as needed */
   height: auto;
+  display: block;
+  margin: 0;
 }
 
-/* Navigation */
 nav {
   display: flex;
   justify-content: flex-end;
@@ -52,7 +54,7 @@ nav a {
   text-decoration: none;
   margin-left: 25px;
   font-weight: 600;
-  font-size: 2rem; /* 2x larger font for nav links */
+  font-size: 1.25rem;
   transition: color 0.3s ease;
 }
 
@@ -62,9 +64,10 @@ nav a:first-child {
 
 nav a:hover,
 nav a:focus {
-  color: #ffcc00; /* Highlight color on hover/focus */
+  color: #ffcc00;
   outline: none;
 }
+
 
 /* Main Content */
 main {
