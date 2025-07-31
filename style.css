@@ -52,7 +52,7 @@ nav a {
   text-decoration: none;
   margin-left: 25px;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 2rem; /* 2x larger font for nav links */
   transition: color 0.3s ease;
 }
 
@@ -162,8 +162,12 @@ footer {
     display: block;
     margin-left: 0;
     margin-bottom: 10px;
+    font-size: 1.5rem; /* reduce font size on mobile for nav links */
   }
 }
+
+/* Form Styles */
+
 .quotation-form {
   background-color: white;
   padding: 30px;
@@ -195,6 +199,7 @@ footer {
 .quotation-form button {
   margin-top: 20px;
 }
+
 .form-group {
   margin-bottom: 20px;
 }
@@ -216,4 +221,3 @@ footer {
   font-family: inherit;
   font-size: 1rem;
 }
-
