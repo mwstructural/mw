@@ -1,4 +1,4 @@
-/* Basic reset */
+/* Reset box model and remove default margin/padding */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,70 +7,75 @@
 
 /* Body styles */
 body {
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
-  color: #001f3f;
+  font-family: Arial, sans-serif; /* Change font here */
+  background-color: #f9f9f9; /* Page background color */
+  color: #001f3f; /* Main text color */
   line-height: 1.6;
-  padding: 20px;
+  padding: 20px; /* Space around page content */
 }
 
 /* Header styles */
 header {
-  background-color: #001f3f;
-  color: white;
-  padding: 40px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1100px;
-  margin: 0 auto 40px auto;
+  background-color: #001f3f; /* Header background color */
+  color: white; /* Text color in header */
+  padding: 40px 20px; /* Space inside header */
+  max-width: 1100px; /* Header max width */
+  margin: 0 auto 40px auto; /* Center header horizontally and add bottom space */
+  display: flex; /* Flexbox for logo + nav */
+  align-items: center; /* Vertically center content */
+  justify-content: space-between; /* Space between logo and nav */
 }
 
+/* Logo image */
 .logo {
-  width: 110px;
+  width: 110px; /* Logo width - change size here */
   height: auto;
 }
 
+/* Navigation links container */
 nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 25px;
-  font-weight: 600;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
+  color: white; /* Nav link color */
+  text-decoration: none; /* Remove underline */
+  margin-left: 25px; /* Space between links */
+  font-weight: 600; /* Font weight for nav links */
+  font-size: 1.1rem; /* Font size for nav links - adjust here */
+  transition: color 0.3s ease; /* Smooth hover transition */
 }
 
+/* Remove left margin on first nav link */
 nav a:first-child {
   margin-left: 0;
 }
 
+/* Nav link hover/focus color */
 nav a:hover,
 nav a:focus {
-  color: #ffcc00;
+  color: #ffcc00; /* Highlight color */
   outline: none;
 }
 
-/* Main content */
+/* Main content container */
 main {
-  max-width: 900px;
-  margin: 0 auto;
-  background: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 900px; /* Content width */
+  margin: 0 auto; /* Center horizontally */
+  background: white; /* Content background */
+  padding: 30px; /* Inner spacing */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Subtle shadow */
 }
 
+/* Headings */
 h1 {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Space below h1 */
 }
 
 h2 {
-  margin-top: 30px;
-  margin-bottom: 15px;
-  color: #004080;
+  margin-top: 30px; /* Space above h2 */
+  margin-bottom: 15px; /* Space below h2 */
+  color: #004080; /* H2 color */
 }
 
-/* Forms */
+/* Form labels */
 form label {
   display: block;
   margin-top: 15px;
@@ -78,20 +83,22 @@ form label {
   color: #001f3f;
 }
 
+/* Form inputs, selects, textarea */
 form input, form select, form textarea {
-  width: 100%;
-  padding: 10px;
+  width: 100%; /* Full width */
+  padding: 10px; /* Inner spacing */
   margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid #ccc; /* Border style */
+  border-radius: 5px; /* Rounded edges */
   font-family: inherit;
   font-size: 1rem;
 }
 
+/* Buttons */
 button.button {
   margin-top: 20px;
-  background-color: #001f3f;
-  color: white;
+  background-color: #001f3f; /* Button background */
+  color: white; /* Button text */
   border: none;
   padding: 12px 25px;
   border-radius: 5px;
@@ -102,6 +109,6 @@ button.button {
 
 button.button:hover,
 button.button:focus {
-  background-color: #004080;
+  background-color: #004080; /* Hover button background */
   outline: none;
 }
