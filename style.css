@@ -21,9 +21,10 @@ header {
 
 /* Logo styling */
 .logo {
-  max-width: 20px;     /* Limits the logo width */
-  height: auto;         /* Maintains aspect ratio */
-  display: block;       /* Prevents inline spacing issues */
+  width: 150px;
+  height: auto;
+  display: block;
+  border: 2px solid red;
 }
 
 
@@ -132,9 +133,5 @@ footer {
   color: white;
   margin-top: 40px;
 }
-/* ===== Debug Borders Start ===== */
-.logo {
-  border: 2px solid red;
-}
-/* ===== Debug Borders End ===== */
+
 
