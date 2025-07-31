@@ -8,58 +8,46 @@
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="header-container">
-    <img src="images/MWlogo.png" alt="MW Consulting Engineers Logo" class="logo" />
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<header>
+  <img src="images/MWlogo.png" alt="MW Consulting Engineers Logo" class="logo" />
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-  <!-- Main content -->
-  <main class="container">
-    <h1>Contact Us</h1>
-    <p>Email: <a href="mailto:admin@mwce.au">admin@mwce.au</a></p>
+<main>
+  <h1>Contact Us</h1>
+  <p>Email: <a href="mailto:admin@mwce.au">admin@mwce.au</a></p>
 
-    <h2>Request a Free Quotation</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST" class="quotation-form">
-      <div class="form-group">
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" required />
-      </div>
+  <h2>Request a Free Quotation</h2>
+  <form action="https://formspree.io/f/your-form-id" method="POST" class="quotation-form">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required />
 
-      <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required />
-      </div>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required />
 
-      <div class="form-group">
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" required />
-      </div>
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required />
 
-      <div class="form-group">
-        <label for="service">Type of Service</label>
-        <select id="service" name="service">
-          <option value="residential">Residential</option>
-          <option value="industrial">Industrial</option>
-          <option value="inspection">Inspection</option>
-          <option value="other">Other</option>
-        </select>
-      </div>
+    <label for="service">Type of Service</label>
+    <select id="service" name="service">
+      <option value="residential">Residential</option>
+      <option value="industrial">Industrial</option>
+      <option value="inspection">Inspection</option>
+      <option value="other">Other</option>
+    </select>
 
-      <div class="form-group">
-        <label for="details">Project Details</label>
-        <textarea id="details" name="details" rows="5" required></textarea>
-      </div>
+    <label for="details">Project Details</label>
+    <textarea id="details" name="details" rows="5" required></textarea>
 
-      <button type="submit" class="button">Send Request</button>
-    </form>
-  </main>
+    <button type="submit" class="button">Send Request</button>
+  </form>
+</main>
 
 </body>
 </html>
