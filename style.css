@@ -24,7 +24,8 @@ header {
   width: 150px;
   height: auto;
   display: block;
-  border: 2px solid red;
+  object-fit: contain;
+  border: 2px solid red;  /* Remove this after debugging */
 }
 
 
