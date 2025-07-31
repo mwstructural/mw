@@ -132,3 +132,9 @@ footer {
   color: white;
   margin-top: 40px;
 }
+/* ===== Debug Borders Start ===== */
+.logo {
+  border: 2px solid red;
+}
+/* ===== Debug Borders End ===== */
+
