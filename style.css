@@ -1,133 +1,132 @@
-/* Reset box model and remove default margin/padding */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* Body styles */
+/* ========== GLOBAL STYLES ========== */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #001f3f;
-  line-height: 1.6;
-  padding: 20px;
+  font-family: Arial, sans-serif;         /* Sets base font for entire site */
+  margin: 0;                              /* Removes default body margin */
+  padding: 0;                             /* Removes default body padding */
+  line-height: 1.6;                       /* Improves readability */
+  color: #222;                            /* Default text color */
+  background-color: #f9f9f9;              /* Light gray background */
 }
 
-/* Header styles */
+/* ========== HEADER SECTION ========== */
 header {
-  background-color: #001f3f;
-  color: white;
-  padding: 40px 20px;
-  max-width: 1100px;
-  margin: 0 auto 40px auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  background-color: #001f3f;              /* Dark navy background */
+  padding: 20px;                          /* Spacing inside header */
+  display: flex;                          /* Flex container for logo and nav */
+  align-items: center;                    /* Vertically center items */
+  justify-content: space-between;         /* Logo on left, nav on right */
+  max-width: 1100px;                      /* Limits header width */
+  margin: 0 auto 40px;                    /* Center header + bottom spacing */
 }
 
-/* Logo size */
+/* Logo styling */
 .logo {
-  width: 110px;
-  height: auto;
+  width: 80px;                            /* Adjust size of logo */
+  height: auto;                           /* Maintain aspect ratio */
+}
+
+/* Navigation container */
+nav {
+  display: flex;                          /* Horizontal layout for links */
+  align-items: center;
 }
 
 /* Navigation links */
 nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 25px;
-  font-weight: 600;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
+  color: white;                           /* White link color */
+  text-decoration: none;                  /* Remove underline */
+  margin-left: 25px;                      /* Space between links */
+  font-weight: 600;                       /* Bold font */
+  font-size: 1.1rem;                      /* Slightly larger text */
+  transition: color 0.3s ease;            /* Smooth color transition */
 }
 
-nav a:first-child {
-  margin-left: 0;
+/* Navigation link hover effect */
+nav a:hover {
+  color: #ffcc00;                         /* Yellow hover color */
 }
 
-nav a:hover,
-nav a:focus {
-  color: #ffcc00;
-  outline: none;
-}
-
-/* Main content container */
+/* ========== MAIN CONTENT STYLES ========== */
 main {
-  max-width: 900px;
-  margin: 0 auto;
-  background: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 900px;                       /* Limit main content width */
+  margin: 40px auto;                      /* Center content with spacing */
+  background: white;                      /* White background card */
+  padding: 30px;                          /* Inner spacing */
+  border-radius: 8px;                     /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
-/* Headings */
+/* ========== TYPOGRAPHY ========== */
 h1 {
-  margin-bottom: 20px;
+  color: navy;                            /* Dark blue title */
+  margin-bottom: 20px;                    /* Space below title */
 }
 
 h2 {
-  margin-top: 30px;
-  margin-bottom: 15px;
-  color: #004080;
+  color: #004080;                         /* Mid-blue for subheadings */
+  margin-bottom: 10px;
 }
 
-/* Project styling */
-.project {
-  margin-bottom: 20px;
+p {
+  margin-bottom: 15px;                    /* Space between paragraphs */
+}
+
+/* Section spacing */
+section {
+  margin-bottom: 30px;                    /* Space between content blocks */
+}
+
+/* ========== FORM STYLES (Used on Contact Page) ========== */
+.quotation-form {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;                 /* Stack form elements vertically */
 }
 
-.project img {
-  width: 200px;
-  height: 140px;
-  object-fit: cover;
-  margin-right: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.form-group {
+  margin-bottom: 20px;                    /* Space between form fields */
 }
 
-.project-details h3 {
+label {
   font-weight: bold;
-  font-size: 1.1em;
-  margin-bottom: 6px;
-  color: #002050;
+  margin-bottom: 5px;
+  display: block;                         /* Makes label take full line */
 }
 
-/* Form styles for contact page */
-form label {
-  display: block;
-  margin-top: 15px;
-  font-weight: 600;
-  color: #001f3f;
+/* Input, Select, Textarea styling */
+input,
+select,
+textarea {
+  width: 100%;                            /* Full width input fields */
+  padding: 10px;                          /* Inner space for text */
+  border: 1px solid #ccc;                 /* Light border */
+  border-radius: 5px;                     /* Rounded corners */
+  font-size: 1rem;                        /* Standard font size */
 }
 
-form input, form select, form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-family: inherit;
-  font-size: 1rem;
+textarea {
+  resize: vertical;                       /* Allow vertical resizing only */
 }
 
-button.button {
-  margin-top: 20px;
-  background-color: #001f3f;
+/* Submit button */
+.button {
+  background-color: #004080;              /* Primary button color */
   color: white;
   border: none;
-  padding: 12px 25px;
+  padding: 12px 20px;
   border-radius: 5px;
-  font-weight: 600;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-button.button:hover,
-button.button:focus {
-  background-color: #004080;
-  outline: none;
+.button:hover {
+  background-color: #003366;              /* Darker shade on hover */
+}
+
+/* ========== FOOTER SECTION (Optional) ========== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #001f3f;
+  color: white;
+  margin-top: 40px;
 }
