@@ -1,119 +1,118 @@
 /* ========== GLOBAL STYLES ========== */
 body {
-  font-family: Arial, sans-serif;         /* Sets base font for entire site */
-  margin: 0;                              /* Removes default body margin */
-  padding: 0;                             /* Removes default body padding */
-  line-height: 1.6;                       /* Improves readability */
-  color: #222;                            /* Default text color */
-  background-color: #f9f9f9;              /* Light gray background */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #222;
+  background-color: #f9f9f9;
 }
 
 /* ========== HEADER SECTION ========== */
 header {
-  background-color: #001f3f;              /* Dark navy background */
-  padding: 20px;                          /* Spacing inside header */
-  display: flex;                          /* Flex container for logo and nav */
-  align-items: center;                    /* Vertically center items */
-  justify-content: space-between;         /* Logo on left, nav on right */
-  max-width: 1100px;                      /* Limits header width */
-  margin: 0 auto 40px;                    /* Center header + bottom spacing */
+  background-color: #001f3f;
+  padding: 10px 20px; /* Reduced from 20px for tighter spacing */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto 40px;
 }
 
 /* Logo styling */
 .logo {
-  width: 150px;
+  max-height: 60px;     /* Limits logo height */
   height: auto;
+  width: auto;
   display: block;
   object-fit: contain;
-  border: 2px solid red;  /* Remove this after debugging */
 }
-
 
 /* Navigation container */
 nav {
-  display: flex;                          /* Horizontal layout for links */
+  display: flex;
   align-items: center;
 }
 
 /* Navigation links */
 nav a {
-  color: white;                           /* White link color */
-  text-decoration: none;                  /* Remove underline */
-  margin-left: 25px;                      /* Space between links */
-  font-weight: 600;                       /* Bold font */
-  font-size: 1.1rem;                      /* Slightly larger text */
-  transition: color 0.3s ease;            /* Smooth color transition */
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
 }
 
 /* Navigation link hover effect */
 nav a:hover {
-  color: #ffcc00;                         /* Yellow hover color */
+  color: #ffcc00;
 }
 
 /* ========== MAIN CONTENT STYLES ========== */
 main {
-  max-width: 900px;                       /* Limit main content width */
-  margin: 40px auto;                      /* Center content with spacing */
-  background: white;                      /* White background card */
-  padding: 30px;                          /* Inner spacing */
-  border-radius: 8px;                     /* Rounded corners */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* ========== TYPOGRAPHY ========== */
 h1 {
-  color: navy;                            /* Dark blue title */
-  margin-bottom: 20px;                    /* Space below title */
+  color: navy;
+  margin-bottom: 20px;
 }
 
 h2 {
-  color: #004080;                         /* Mid-blue for subheadings */
+  color: #004080;
   margin-bottom: 10px;
 }
 
 p {
-  margin-bottom: 15px;                    /* Space between paragraphs */
+  margin-bottom: 15px;
 }
 
 /* Section spacing */
 section {
-  margin-bottom: 30px;                    /* Space between content blocks */
+  margin-bottom: 30px;
 }
 
 /* ========== FORM STYLES (Used on Contact Page) ========== */
 .quotation-form {
   display: flex;
-  flex-direction: column;                 /* Stack form elements vertically */
+  flex-direction: column;
 }
 
 .form-group {
-  margin-bottom: 20px;                    /* Space between form fields */
+  margin-bottom: 20px;
 }
 
 label {
   font-weight: bold;
   margin-bottom: 5px;
-  display: block;                         /* Makes label take full line */
+  display: block;
 }
 
 /* Input, Select, Textarea styling */
 input,
 select,
 textarea {
-  width: 100%;                            /* Full width input fields */
-  padding: 10px;                          /* Inner space for text */
-  border: 1px solid #ccc;                 /* Light border */
-  border-radius: 5px;                     /* Rounded corners */
-  font-size: 1rem;                        /* Standard font size */
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
 textarea {
-  resize: vertical;                       /* Allow vertical resizing only */
+  resize: vertical;
 }
 
 /* Submit button */
 .button {
-  background-color: #004080;              /* Primary button color */
+  background-color: #004080;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -123,7 +122,7 @@ textarea {
 }
 
 .button:hover {
-  background-color: #003366;              /* Darker shade on hover */
+  background-color: #003366;
 }
 
 /* ========== FOOTER SECTION (Optional) ========== */
@@ -134,5 +133,3 @@ footer {
   color: white;
   margin-top: 40px;
 }
-
-
