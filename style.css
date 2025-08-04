@@ -1,126 +1,120 @@
-/* ========== GLOBAL STYLES ========== */
+/* ===== Reset default spacing and box-sizing ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Set base font and body settings ===== */
+html, body {
+  height: 100%; /* Required for sticky footer layout */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #f9f9f9;
+}
+
+/* ===== Layout structure for sticky footer ===== */
 body {
-  font-family: Arial, sans-serif;         /* Base font for site */
-  margin: 0;                              /* Remove default margin */
-  padding: 0;                             /* Remove default padding */
-  line-height: 1.6;                       /* Line height for readability */
-  color: #222;                            /* Default text color */
-  background-color: #f9f9f9;              /* Light background */
-}
-
-/* ========== HEADER STYLES ========== */
-header {
-  background-color: #001f3f;              /* Dark navy header background */
-  padding: 10px 20px;                     /* Header padding */
-  display: flex;                          /* Flexbox layout for logo + nav */
-  align-items: center;                    /* Vertically center items */
-  justify-content: space-between;         /* Space between logo and nav */
-  max-width: 1100px;                      /* Max header width */
-  margin: 0 auto 40px;                    /* Center header, space below */
-}
-
-/* Logo styling */
-.logo {
-  max-height: 60px !important;            /* Limit logo height */
-  width: auto !important;                  /* Maintain aspect ratio */
-  height: auto !important;
-  display: block;                         /* Remove inline spacing */
-  object-fit: contain;                    /* Scale to fit without cropping */
-}
-
-/* Navigation styles */
-nav {
-  display: flex;                          /* Horizontal nav links */
-  align-items: center;
-}
-
-nav a {
-  color: white;                           /* White nav links */
-  text-decoration: none;                  /* Remove underline */
-  margin-left: 25px;                      /* Spacing between links */
-  font-weight: 600;                       /* Bold text */
-  font-size: 1.1rem;                      /* Slightly larger font */
-  transition: color 0.3s ease;            /* Smooth hover */
-}
-
-nav a:hover {
-  color: #ffcc00;                         /* Yellow hover */
-}
-
-/* ========== MAIN CONTENT STYLES ========== */
-main {
-  max-width: 900px;                       /* Limit main content width */
-  margin: 40px auto;                      /* Center main content */
-  background: white;                      /* White card background */
-  padding: 30px;                          /* Inner padding */
-  border-radius: 8px;                     /* Rounded corners */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Soft shadow */
-}
-
-/* Headings */
-h1 {
-  color: navy;
-  margin-bottom: 20px;
-}
-
-h2 {
-  color: #004080;
-  margin-bottom: 10px;
-}
-
-p {
-  margin-bottom: 15px;
-}
-
-section {
-  margin-bottom: 30px;
-}
-
-/* ========== FORM STYLES (Contact Page) ========== */
-form {
   display: flex;
   flex-direction: column;
 }
 
-label {
-  font-weight: bold;
-  margin-bottom: 5px;
-  display: block;
+/* ===== Sticky Header ===== */
+header {
+  position: sticky; /* Keeps the header visible when scrolling */
+  top: 0; /* Sticks to top of the viewport */
+  z-index: 1000; /* Makes sure it stays on top of other elements */
+  display: flex;
+  justify-content: space-between; /* Logo left, nav right */
+  align-items: center;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for clarity */
+}
+
+/* ===== Logo image settings ===== */
+.logo {
+  width: 120px; /* Adjust logo size */
+  height: auto;
+}
+
+/* ===== Navigation menu styles ===== */
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 18px; /* Bigger font for links */
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Main content area ===== */
+main {
+  flex: 1; /* Makes main content grow to push footer down */
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ===== Section spacing ===== */
+section {
+  margin-bottom: 40px;
+}
+
+/* ===== Project listings style ===== */
+.project {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.project img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-details {
+  max-width: 800px;
+}
+
+/* ===== Form styling for Contact page ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
 }
 
 input, select, textarea {
-  width: 100%;
   padding: 10px;
+  font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-  margin-bottom: 20px;
+  border-radius: 6px;
 }
 
-textarea {
-  resize: vertical;
-}
-
+/* ===== Submit button style ===== */
 .button {
-  background-color: #004080;
+  background-color: #1a1a1a;
   color: white;
-  border: none;
   padding: 12px 20px;
-  border-radius: 5px;
-  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .button:hover {
-  background-color: #003366;
+  background-color: #333;
 }
 
-/* ========== OPTIONAL FOOTER ========== */
+/* ===== Sticky Footer at the bottom ===== */
 footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #001f3f;
+  background-color: #1a1a1a;
   color: white;
-  margin-top: 40px;
+  text-align: center;
+  padding: 15px 10px;
 }
