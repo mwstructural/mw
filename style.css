@@ -1,135 +1,135 @@
 /* ========== GLOBAL STYLES ========== */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  color: #222;
-  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;         /* Sets a clean, readable font for all text */
+  margin: 0;                              /* Removes default outer margin of the page */
+  padding: 0;                             /* Removes default inner padding of the page */
+  line-height: 1.6;                       /* Sets line spacing for better readability */
+  color: #222;                            /* Sets the default text color to dark gray */
+  background-color: #f9f9f9;              /* Applies a light gray background to the page */
 }
 
 /* ========== HEADER SECTION ========== */
 header {
-  background-color: #001f3f;
-  padding: 10px 20px; /* Reduced from 20px for tighter spacing */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1100px;
-  margin: 0 auto 40px;
+  background-color: #001f3f;              /* Dark navy background color for header */
+  padding: 10px 20px;                     /* Adds vertical (10px) and horizontal (20px) spacing inside header */
+  display: flex;                          /* Uses flexbox to arrange logo and nav in a row */
+  align-items: center;                    /* Vertically centers logo and navigation within header */
+  justify-content: space-between;         /* Pushes logo to the left and nav to the right */
+  max-width: 1100px;                      /* Limits the header’s width to 1100px */
+  margin: 0 auto 40px;                    /* Horizontally centers the header and adds 40px bottom spacing */
 }
 
 /* Logo styling */
 .logo {
-  max-height: 60px;     /* Limits logo height */
-  height: auto;
-  width: auto;
-  display: block;
-  object-fit: contain;
+  max-height: 60px;                       /* Limits the maximum height of the logo image */
+  height: auto;                           /* Keeps the logo’s original aspect ratio */
+  width: auto;                            /* Prevents distortion by avoiding forced width */
+  display: block;                         /* Ensures no extra space below the image */
+  object-fit: contain;                    /* Scales image to fit without cropping or distortion */
 }
 
 /* Navigation container */
 nav {
-  display: flex;
-  align-items: center;
+  display: flex;                          /* Arranges navigation links in a horizontal row */
+  align-items: center;                    /* Vertically centers links within nav area */
 }
 
 /* Navigation links */
 nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 25px;
-  font-weight: 600;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
+  color: white;                           /* Sets link text color to white */
+  text-decoration: none;                  /* Removes underline from links */
+  margin-left: 25px;                      /* Adds spacing between navigation links */
+  font-weight: 600;                       /* Makes the links bold */
+  font-size: 1.1rem;                      /* Slightly increases link text size */
+  transition: color 0.3s ease;            /* Smooth transition for hover effect */
 }
 
 /* Navigation link hover effect */
 nav a:hover {
-  color: #ffcc00;
+  color: #ffcc00;                         /* Changes link color to yellow on hover */
 }
 
 /* ========== MAIN CONTENT STYLES ========== */
 main {
-  max-width: 900px;
-  margin: 40px auto;
-  background: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;                       /* Limits main content width for readability */
+  margin: 40px auto;                      /* Centers the content and adds 40px vertical spacing */
+  background: white;                      /* Sets the content background to white */
+  padding: 30px;                          /* Adds inner spacing around content */
+  border-radius: 8px;                     /* Rounds the corners of the content box */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adds a soft drop shadow */
 }
 
 /* ========== TYPOGRAPHY ========== */
 h1 {
-  color: navy;
-  margin-bottom: 20px;
+  color: navy;                            /* Sets heading 1 (H1) color to dark blue */
+  margin-bottom: 20px;                    /* Adds space below the heading */
 }
 
 h2 {
-  color: #004080;
-  margin-bottom: 10px;
+  color: #004080;                         /* Sets heading 2 (H2) color to medium blue */
+  margin-bottom: 10px;                    /* Adds space below the subheading */
 }
 
 p {
-  margin-bottom: 15px;
+  margin-bottom: 15px;                    /* Adds space below each paragraph */
 }
 
 /* Section spacing */
 section {
-  margin-bottom: 30px;
+  margin-bottom: 30px;                    /* Adds space between content blocks/sections */
 }
 
 /* ========== FORM STYLES (Used on Contact Page) ========== */
 .quotation-form {
-  display: flex;
-  flex-direction: column;
+  display: flex;                          /* Enables flexbox layout for form */
+  flex-direction: column;                 /* Stacks form elements vertically */
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 20px;                    /* Adds spacing between form fields */
 }
 
 label {
-  font-weight: bold;
-  margin-bottom: 5px;
-  display: block;
+  font-weight: bold;                      /* Makes labels bold */
+  margin-bottom: 5px;                     /* Adds space below label text */
+  display: block;                         /* Makes label span full width of form group */
 }
 
 /* Input, Select, Textarea styling */
 input,
 select,
 textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
+  width: 100%;                            /* Makes fields take full width of the form */
+  padding: 10px;                          /* Adds spacing inside input fields */
+  border: 1px solid #ccc;                 /* Light gray border for form fields */
+  border-radius: 5px;                     /* Slightly rounded corners */
+  font-size: 1rem;                        /* Standard readable text size */
 }
 
 textarea {
-  resize: vertical;
+  resize: vertical;                       /* Allows vertical resizing of textareas only */
 }
 
 /* Submit button */
 .button {
-  background-color: #004080;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
+  background-color: #004080;              /* Navy blue background for button */
+  color: white;                           /* White text */
+  border: none;                           /* Removes default border */
+  padding: 12px 20px;                     /* Adds padding inside the button */
+  border-radius: 5px;                     /* Rounded button corners */
+  font-size: 1rem;                        /* Standard text size */
+  cursor: pointer;                        /* Changes cursor to pointer on hover */
 }
 
 .button:hover {
-  background-color: #003366;
+  background-color: #003366;              /* Darker blue on hover */
 }
 
 /* ========== FOOTER SECTION (Optional) ========== */
 footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #001f3f;
-  color: white;
-  margin-top: 40px;
+  text-align: center;                     /* Centers footer text */
+  padding: 20px;                          /* Adds inner spacing */
+  background-color: #001f3f;              /* Dark navy background like header */
+  color: white;                           /* White text */
+  margin-top: 40px;                       /* Adds space above the footer */
 }
