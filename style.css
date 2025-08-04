@@ -1,135 +1,126 @@
 /* ========== GLOBAL STYLES ========== */
 body {
-  font-family: Arial, sans-serif;         /* Sets a clean, readable font for all text */
-  margin: 0;                              /* Removes default outer margin of the page */
-  padding: 0;                             /* Removes default inner padding of the page */
-  line-height: 1.6;                       /* Sets line spacing for better readability */
-  color: #222;                            /* Sets the default text color to dark gray */
-  background-color: #f9f9f9;              /* Applies a light gray background to the page */
+  font-family: Arial, sans-serif;         /* Base font for site */
+  margin: 0;                              /* Remove default margin */
+  padding: 0;                             /* Remove default padding */
+  line-height: 1.6;                       /* Line height for readability */
+  color: #222;                            /* Default text color */
+  background-color: #f9f9f9;              /* Light background */
 }
 
-/* ========== HEADER SECTION ========== */
+/* ========== HEADER STYLES ========== */
 header {
-  background-color: #001f3f;              /* Dark navy background color for header */
-  padding: 10px 20px;                     /* Adds vertical (10px) and horizontal (20px) spacing inside header */
-  display: flex;                          /* Uses flexbox to arrange logo and nav in a row */
-  align-items: center;                    /* Vertically centers logo and navigation within header */
-  justify-content: space-between;         /* Pushes logo to the left and nav to the right */
-  max-width: 1100px;                      /* Limits the header’s width to 1100px */
-  margin: 0 auto 40px;                    /* Horizontally centers the header and adds 40px bottom spacing */
+  background-color: #001f3f;              /* Dark navy header background */
+  padding: 10px 20px;                     /* Header padding */
+  display: flex;                          /* Flexbox layout for logo + nav */
+  align-items: center;                    /* Vertically center items */
+  justify-content: space-between;         /* Space between logo and nav */
+  max-width: 1100px;                      /* Max header width */
+  margin: 0 auto 40px;                    /* Center header, space below */
 }
 
 /* Logo styling */
 .logo {
-  max-height: 60px;                       /* Limits the maximum height of the logo image */
-  height: auto;                           /* Keeps the logo’s original aspect ratio */
-  width: auto;                            /* Prevents distortion by avoiding forced width */
-  display: block;                         /* Ensures no extra space below the image */
-  object-fit: contain;                    /* Scales image to fit without cropping or distortion */
+  max-height: 60px !important;            /* Limit logo height */
+  width: auto !important;                  /* Maintain aspect ratio */
+  height: auto !important;
+  display: block;                         /* Remove inline spacing */
+  object-fit: contain;                    /* Scale to fit without cropping */
 }
 
-/* Navigation container */
+/* Navigation styles */
 nav {
-  display: flex;                          /* Arranges navigation links in a horizontal row */
-  align-items: center;                    /* Vertically centers links within nav area */
+  display: flex;                          /* Horizontal nav links */
+  align-items: center;
 }
 
-/* Navigation links */
 nav a {
-  color: white;                           /* Sets link text color to white */
-  text-decoration: none;                  /* Removes underline from links */
-  margin-left: 25px;                      /* Adds spacing between navigation links */
-  font-weight: 600;                       /* Makes the links bold */
-  font-size: 1.1rem;                      /* Slightly increases link text size */
-  transition: color 0.3s ease;            /* Smooth transition for hover effect */
+  color: white;                           /* White nav links */
+  text-decoration: none;                  /* Remove underline */
+  margin-left: 25px;                      /* Spacing between links */
+  font-weight: 600;                       /* Bold text */
+  font-size: 1.1rem;                      /* Slightly larger font */
+  transition: color 0.3s ease;            /* Smooth hover */
 }
 
-/* Navigation link hover effect */
 nav a:hover {
-  color: #ffcc00;                         /* Changes link color to yellow on hover */
+  color: #ffcc00;                         /* Yellow hover */
 }
 
 /* ========== MAIN CONTENT STYLES ========== */
 main {
-  max-width: 900px;                       /* Limits main content width for readability */
-  margin: 40px auto;                      /* Centers the content and adds 40px vertical spacing */
-  background: white;                      /* Sets the content background to white */
-  padding: 30px;                          /* Adds inner spacing around content */
-  border-radius: 8px;                     /* Rounds the corners of the content box */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adds a soft drop shadow */
+  max-width: 900px;                       /* Limit main content width */
+  margin: 40px auto;                      /* Center main content */
+  background: white;                      /* White card background */
+  padding: 30px;                          /* Inner padding */
+  border-radius: 8px;                     /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Soft shadow */
 }
 
-/* ========== TYPOGRAPHY ========== */
+/* Headings */
 h1 {
-  color: navy;                            /* Sets heading 1 (H1) color to dark blue */
-  margin-bottom: 20px;                    /* Adds space below the heading */
+  color: navy;
+  margin-bottom: 20px;
 }
 
 h2 {
-  color: #004080;                         /* Sets heading 2 (H2) color to medium blue */
-  margin-bottom: 10px;                    /* Adds space below the subheading */
+  color: #004080;
+  margin-bottom: 10px;
 }
 
 p {
-  margin-bottom: 15px;                    /* Adds space below each paragraph */
+  margin-bottom: 15px;
 }
 
-/* Section spacing */
 section {
-  margin-bottom: 30px;                    /* Adds space between content blocks/sections */
+  margin-bottom: 30px;
 }
 
-/* ========== FORM STYLES (Used on Contact Page) ========== */
-.quotation-form {
-  display: flex;                          /* Enables flexbox layout for form */
-  flex-direction: column;                 /* Stacks form elements vertically */
-}
-
-.form-group {
-  margin-bottom: 20px;                    /* Adds spacing between form fields */
+/* ========== FORM STYLES (Contact Page) ========== */
+form {
+  display: flex;
+  flex-direction: column;
 }
 
 label {
-  font-weight: bold;                      /* Makes labels bold */
-  margin-bottom: 5px;                     /* Adds space below label text */
-  display: block;                         /* Makes label span full width of form group */
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
 }
 
-/* Input, Select, Textarea styling */
-input,
-select,
-textarea {
-  width: 100%;                            /* Makes fields take full width of the form */
-  padding: 10px;                          /* Adds spacing inside input fields */
-  border: 1px solid #ccc;                 /* Light gray border for form fields */
-  border-radius: 5px;                     /* Slightly rounded corners */
-  font-size: 1rem;                        /* Standard readable text size */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
 textarea {
-  resize: vertical;                       /* Allows vertical resizing of textareas only */
+  resize: vertical;
 }
 
-/* Submit button */
 .button {
-  background-color: #004080;              /* Navy blue background for button */
-  color: white;                           /* White text */
-  border: none;                           /* Removes default border */
-  padding: 12px 20px;                     /* Adds padding inside the button */
-  border-radius: 5px;                     /* Rounded button corners */
-  font-size: 1rem;                        /* Standard text size */
-  cursor: pointer;                        /* Changes cursor to pointer on hover */
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .button:hover {
-  background-color: #003366;              /* Darker blue on hover */
+  background-color: #003366;
 }
 
-/* ========== FOOTER SECTION (Optional) ========== */
+/* ========== OPTIONAL FOOTER ========== */
 footer {
-  text-align: center;                     /* Centers footer text */
-  padding: 20px;                          /* Adds inner spacing */
-  background-color: #001f3f;              /* Dark navy background like header */
-  color: white;                           /* White text */
-  margin-top: 40px;                       /* Adds space above the footer */
+  text-align: center;
+  padding: 20px;
+  background-color: #001f3f;
+  color: white;
+  margin-top: 40px;
 }
